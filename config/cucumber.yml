@@ -1,0 +1,17 @@
+# config/cucumber.yml
+##YAML Template
+---
+hongmi-4_2:  IDEVICENAME='hongmi-4_2'
+nubia-5_0:  IDEVICENAME='nubia-5_0'
+iphone4s-8_4: IDEVICENAME='iphone4s-8_4'
+iphone4s-9_0: IDEVICENAME='iphone4s-9_0'
+iphone5-8_4:  IDEVICENAME='iphone5-8_4'
+iphone5-9_0:  IDEVICENAME='iphone5-9_0'
+iphone5s-8_4: IDEVICENAME='iphone5s-8_4'
+iphone5s-9_0: IDEVICENAME='iphone5s-9_0'
+iphone6-8_4:  IDEVICENAME='iphone6-8_4'
+iphone6-9_0:  IDEVICENAME='iphone6-9_0'
+iphone6p-9_0: IDEVICENAME='iphone6p-9_0'
+iphone6s-9_0: IDEVICENAME='iphone6s-9_0'
+iphone6sp-9_0: IDEVICENAME='iphone6sp-9_0'
+

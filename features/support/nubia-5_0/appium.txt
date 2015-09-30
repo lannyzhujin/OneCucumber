@@ -1,0 +1,11 @@
+[caps]
+platformName = "android"
+deviceName = "NX505J"
+platformVersion = "5.0"
+nativeWebTap = "true"
+autoWebview = "true"
+app = "/Users/yourusername/Downloads/FundApp.apk"
+
+[appium_lib]
+sauce_username = false
+sauce_access_key = false

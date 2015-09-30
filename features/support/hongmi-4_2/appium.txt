@@ -1,0 +1,13 @@
+[caps]
+platformName = "android"
+deviceName = "YOUR_DEVECE_ID_GET_BY_COMMAND_"adb devices""
+platformVersion = "4.2"
+automationName = "selendroid"
+nativeWebTap = "true"
+autoWebview = "true"
+app = "/User/yourusername/Downloads/FundApp.apk”
+
+
+[appium_lib]
+sauce_username = false
+sauce_access_key = false

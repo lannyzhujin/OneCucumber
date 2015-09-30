@@ -1,0 +1,11 @@
+[caps]
+platformName = "ios"
+deviceName = "iPhone 5s"
+platformVersion = "8.4"
+app = "/Users/yourusername/workspace/iOS_APP_Dest/Build/Products/Release-iphonesimulator/FinanceApp.app"
+waitForAppScript = "true"
+sendKeyStrategy = "grouped"
+
+[appium_lib]
+sauce_username = false
+sauce_access_key = false
