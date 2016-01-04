@@ -21,14 +21,15 @@ OneCucumber 是面向由PhoneGap开发APP的自动化测试框架。
 3. 提供Oracle数据库访问接口。
 4. 测试脚本中文支持。
 
-安装：
-1. 安装ruby环境 
-   https://www.ruby-lang.org/zh_cn/downloads/
-2. 安装cucumber环境
+###安装：
+安装ruby环境 
+    https://www.ruby-lang.org/zh_cn/downloads/
+安装cucumber环境
 ```
 gem install cucumber
 ```
-3. 下载OneCucumber源码
+
+下载OneCucumber源码
 ```
 git clone https://github.com/lannyzhujin/OneCucumber.git
 ```
