@@ -24,6 +24,7 @@ OneCucumber 是面向由PhoneGap开发APP的自动化测试框架。
 ###安装：
 安装ruby环境 
     https://www.ruby-lang.org/zh_cn/downloads/
+    
 安装cucumber环境
 ```
 gem install cucumber
