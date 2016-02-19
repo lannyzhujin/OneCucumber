@@ -51,6 +51,12 @@ OneCucumber 是面向由PhoneGap开发APP的自动化测试框架。
 gem install cucumber
 ```
 
+安装Appium,并启动appium server：
+```
+appium &
+```
+或者点击Appium应用中的[Lauch]按钮
+
 下载OneCucumber源码：
 ```
 git clone https://github.com/lannyzhujin/OneCucumber.git
