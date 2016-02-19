@@ -67,8 +67,8 @@ appium &
 ```
  
  - 安装xcode中的iOS模拟器
-   > 模拟器安装：安装完成Xcode以后，创建一个新项目进入Xcode主界面，通过菜单[Xcode]-[Preferences…]进入参数设置，选择Downloads页面，下载需要使用的模拟器iOS版本。
-   > 启动模拟器：可以通过Xcode主菜单、ctrl+点击Xcode dock图标等多种方式启动模拟器
+    - 模拟器安装：安装完成Xcode以后，创建一个新项目进入Xcode主界面，通过菜单[Xcode]-[Preferences…]进入参数设置，选择Downloads页面，下载需要使用的模拟器iOS版本。
+    - 启动模拟器：可以通过Xcode主菜单、ctrl+点击Xcode dock图标等多种方式启动模拟器
 
  - 下载OneCucumber源码：
 ```
@@ -76,16 +76,16 @@ git clone https://github.com/lannyzhujin/OneCucumber.git
 ```
 
  - 修改appium.txt中的配置
-   > 修改被测应用安装包的.apk或者.app路径
+   - 修改被测应用安装包的.apk或者.app路径
      如将OneCucumber/features/support/nubia-5_0/appium.txt文件中app的配置修改为
      app = "/Users/yourusername/Downloads/zcjb-yy.apk"
      将OneCucumber/features/support/iphone6s-9_0/appium.txt文件中app的配置修改为
      app = "/Users/yourusername/Downloads/zcjb-yy.app"
-   > android版本需要修改对应device name
+   - android版本需要修改对应device name
      如将OneCucumber/features/support/nubia-5_0/appium.txt文件中deviceName的配置修改为
      deviceName = "NX505J"
 
- - 在项目根目录中执行用例,例如：
+ - 在项目根目录中执行用例即可,例如：
 ```
 cucumber -p nubia-5_0
 cucumber -p iphone6s-9_0
