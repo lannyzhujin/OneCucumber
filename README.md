@@ -76,14 +76,15 @@ git clone https://github.com/lannyzhujin/OneCucumber.git
 ```
 
  - 修改appium.txt中的配置
-   - 修改被测应用安装包的.apk或者.app路径
+   - 修改被测android应用安装包的.apk
      如将OneCucumber/features/support/nubia-5_0/appium.txt文件中app的配置修改为
      app = "/Users/yourusername/Downloads/zcjb-yy.apk"
-     将OneCucumber/features/support/iphone6s-9_0/appium.txt文件中app的配置修改为
+   - 修改被测iOS应用安装包的.app路径
+     如将OneCucumber/features/support/iphone6s-9_0/appium.txt文件中app的配置修改为
      app = "/Users/yourusername/Downloads/zcjb-yy.app"
    - android版本需要修改对应device name
-     如将OneCucumber/features/support/nubia-5_0/appium.txt文件中deviceName的配置修改为
-     deviceName = "NX505J"
+     如将OneCucumber/features/support/nubia-5_0/appium.txt文件中deviceName的配置修改为adb命令返回的机器名
+     deviceName = "YOUR_CONNECTED_DEVICE_NAME"
 
  - 在项目根目录中执行用例即可,例如：
 ```
