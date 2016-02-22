@@ -10,25 +10,56 @@ Main Features:
 4. Chinese language support
 
 ###Installation
-Install ruby
+ - Install ruby
     https://www.ruby-lang.org/en/downloads/
     
-Install Cucumber
+ - Install Cucumber
 ```
 gem install cucumber
 ```
 
-Download OneCucumber code:
+ - Install Appium, and start appium server：
+```
+appium &
+```
+   or click the [Launch] button in Appium application
+
+ - Install AndroidSDK
+Please refer to http://developer.android.com/sdk/installing/index.html?pkg=tools 
+
+ - Connect real Android phone or simulator
+    Execute the following command, you will see the deviceName returns from you android phone or simulator
+```
+ adb devices
+```
+ 
+ - Install iOS simulator in Xcode
+    - Simulator installation: After install your Xcode, click the [Xcode]-[Preferences…] menu, select Downloads tab, download any iOS simulator you want.
+    - Start simulator: Simulator can be start from Xcode main menu or ctrl+click Xcode icon in launch pad.
+
+ - Download OneCucumber code:
 ```
 git clone https://github.com/lannyzhujin/OneCucumber.git
 ```
 
-Execute commands in peoject's root directory ：
+ - Edit configuration in appium.txt
+   - Edit the android .apk installation package path
+     Eg. edit the OneCucumber/features/support/nubia-5_0/appium.txt file
+     app = "/Users/yourusername/Downloads/zcjb-yy.apk"
+   - Edit the iOS .app installation package path
+     Eg. edit the OneCucumber/features/support/iphone6s-9_0/appium.txt file
+     app = "/Users/yourusername/Downloads/zcjb-yy.app"
+   - Change the device name of android test
+     Eg. change the OneCucumber/features/support/nubia-5_0/appium.txt file
+     deviceName = "YOUR_CONNECTED_DEVICE_NAME"
+
+ - Execute commands in project's root directory
 ```
 cucumber -p nubia-5_0
-cucumber -p iphone6sp-9_0
-cucumber features/ios_client.feature -p iphone6sp-9_0
+cucumber -p iphone6s-9_0
+cucumber features/ios_client.feature -p iphone6s-9_0
 ```
+
 
 
 # OneCucumber
@@ -55,13 +86,13 @@ gem install cucumber
 ```
 appium &
 ```
-   或者点击Appium应用程序中的[Lauch]按钮
+   或者点击Appium应用程序中的[Launch]按钮
 
  - 安装AndroidSDK
 参考http://developer.android.com/sdk/installing/index.html?pkg=tools 
 
  - 连接Android真机或者模拟器
-    执行如下命令，可以看到通过USB端口连接的android真机或者已经启动成功的模拟器的deviceNmae
+    执行如下命令，可以看到通过USB端口连接的android真机或者已经启动成功的模拟器的deviceName
 ```
  adb devices
 ```
