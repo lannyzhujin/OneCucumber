@@ -1,4 +1,5 @@
-require 'oci8'
+# Uncomment next line if you want oracle connection
+#require 'oci8'
 require 'rspec/expectations'
 require 'appium_lib'
 require 'cucumber/ast'
