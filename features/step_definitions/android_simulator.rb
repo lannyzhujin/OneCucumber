@@ -1,4 +1,5 @@
-require 'oci8'
+# Uncomment next line if you want oracle connection
+#require 'oci8'
 require 'rspec'
 require_relative 'app_executor'
 
