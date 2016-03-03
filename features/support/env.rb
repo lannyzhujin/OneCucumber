@@ -9,11 +9,11 @@ require 'appium_lib'
 require 'cucumber/ast'
 require 'rubygems'
 require 'selenium-webdriver'
-require '/Users/yourusername/workspace/MobileAutomation/mobileautomation/AppGap/features/step_definitions/ios_simulator'
+#require '/Users/yourusername/workspace/MobileAutomation/mobileautomation/AppGap/features/step_definitions/ios_simulator'
 
 MAX_SLEEP_SECS = 30
 MAXWAITSECONDS = 30
-ORACLE_ADDRESS = '//oracle.sdptest.shengpay.com:1521/sndapay'
+ORACLE_ADDRESS = '//your.oracle.db.domain.name.com:1521/your-db-name'
 
 # Create a custom World class so we don't pollute `Object` with Appium methods
 class AppiumWorld
