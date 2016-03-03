@@ -1,6 +1,7 @@
 # OneCucumber
 OneCucumber is a automation test framework for APPs developed by PhoneGap. 
 ONE Cucumber gherkin script will work on both of your iOS and Android APPs, so it is named as "OneCucumber".
+Only deploy and tested under MAC OSX.
 
 Main Features:
 
@@ -65,6 +66,7 @@ cucumber features/ios_client.feature -p iphone6s-9_0
 # OneCucumber
 OneCucumber 是面向由PhoneGap开发APP的自动化测试框架。
 由于该框架支持一套cucumber用例同时覆盖android和iOS两种平台，故名“OneCucumber”。
+目前仅在MAC OSX下测试通过。
 
 主要特性：
 
