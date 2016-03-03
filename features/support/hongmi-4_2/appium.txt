@@ -1,5 +1,5 @@
 [caps]
-platformName = "android"
+platformName = "Android"
 deviceName = "YOUR_DEVECE_ID_GET_BY_COMMAND_"adb devices""
 platformVersion = "4.2"
 automationName = "selendroid"
