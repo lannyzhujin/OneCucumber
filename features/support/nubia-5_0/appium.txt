@@ -1,5 +1,5 @@
 [caps]
-platformName = "android"
+platformName = "Android"
 deviceName = "NX505J"
 platformVersion = "5.0"
 nativeWebTap = "true"
