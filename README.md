@@ -42,22 +42,27 @@ Please refer to http://developer.android.com/sdk/installing/index.html?pkg=tools
 ```
 git clone https://github.com/lannyzhujin/OneCucumber.git
 ```
-
- - Edit configuration in appium.txt
-   - Edit the android .apk installation package path
-     Eg. edit the OneCucumber/features/support/nubia-5_0/appium.txt file
-     app = "/Users/yourusername/Downloads/zcjb-yy.apk"
-   - Edit the iOS .app installation package path
-     Eg. edit the OneCucumber/features/support/iphone6s-9_0/appium.txt file
-     app = "/Users/yourusername/Downloads/zcjb-yy.app"
-   - Change the device name of android test
-     Eg. change the OneCucumber/features/support/nubia-5_0/appium.txt file
-     deviceName = "YOUR_CONNECTED_DEVICE_NAME"
+ - Add your device under test
+   - Add your device in OneCucumber/config/cucumber.yml file, like
+     YOUR-DEVICE:  IDEVICENAME='YOUR-DEVICE'
+   - Create folder named "YOUR-DEVICE" under OneCucumber/features/support/ and add a appium.txt file
+     like: OneCucumber/features/support/YOUR-DEVICE/appium.txt
+   - Edit configuration in appium.txt
+     - Edit the android .apk installation package path
+       Eg. edit the OneCucumber/features/support/nubia-5_0/appium.txt file
+       app = "/Users/yourusername/Downloads/zcjb-yy.apk"
+     - Edit the iOS .app installation package path
+       Eg. edit the OneCucumber/features/support/iphone6s-9_0/appium.txt file
+       app = "/Users/yourusername/Downloads/zcjb-yy.app"
+     - Change the device name of android test
+       Eg. change the OneCucumber/features/support/nubia-5_0/appium.txt file
+       deviceName = "YOUR_CONNECTED_DEVICE_NAME"
 
  - Execute commands in project's root directory
 ```
 cucumber -p nubia-5_0
 cucumber -p iphone6s-9_0
+cucumber -p YOUR-DEVICE
 cucumber features/ios_client.feature -p iphone6s-9_0
 ```
 
@@ -108,20 +113,27 @@ appium &
 git clone https://github.com/lannyzhujin/OneCucumber.git
 ```
 
- - 修改appium.txt中的配置
-   - 修改被测android应用安装包的.apk
-     如将OneCucumber/features/support/nubia-5_0/appium.txt文件中app的配置修改为
-     app = "/Users/yourusername/Downloads/zcjb-yy.apk"
-   - 修改被测iOS应用安装包的.app路径
-     如将OneCucumber/features/support/iphone6s-9_0/appium.txt文件中app的配置修改为
-     app = "/Users/yourusername/Downloads/zcjb-yy.app"
-   - android版本需要修改对应device name
-     如将OneCucumber/features/support/nubia-5_0/appium.txt文件中deviceName的配置修改为adb命令返回的机器名
-     deviceName = "YOUR_CONNECTED_DEVICE_NAME"
+ - 添加你的被测设备
+   - 在OneCucumber/config/cucumber.yml中添加你的设备，如
+     YOUR-DEVICE:  IDEVICENAME='YOUR-DEVICE'
+   - 在OneCucumber/features/support/目录下创建一个新设备的目录及appium.txt文件
+     OneCucumber/features/support/YOUR-DEVICE/appium.txt
+
+   - 修改appium.txt中的配置
+     - 修改被测android应用安装包的.apk
+       如将OneCucumber/features/support/nubia-5_0/appium.txt文件中app的配置修改为
+       app = "/Users/yourusername/Downloads/zcjb-yy.apk"
+     - 修改被测iOS应用安装包的.app路径
+       如将OneCucumber/features/support/iphone6s-9_0/appium.txt文件中app的配置修改为
+       app = "/Users/yourusername/Downloads/zcjb-yy.app"
+     - android版本需要修改对应device name
+       如将OneCucumber/features/support/nubia-5_0/appium.txt文件中deviceName的配置修改为adb命令返回的机器名
+       deviceName = "YOUR_CONNECTED_DEVICE_NAME"
 
  - 在项目根目录中执行用例即可,例如：
 ```
 cucumber -p nubia-5_0
 cucumber -p iphone6s-9_0
+cucumber -p YOUR-DEVICE
 cucumber features/ios_client.feature -p iphone6s-9_0
 ```
