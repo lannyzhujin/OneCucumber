@@ -5,7 +5,7 @@ platformVersion = "4.2"
 automationName = "selendroid"
 nativeWebTap = "true"
 autoWebview = "true"
-app = "./FundApp.apk”
+app = "./zcjb-yy.apk”
 
 
 [appium_lib]
