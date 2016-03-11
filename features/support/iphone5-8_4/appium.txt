@@ -2,7 +2,7 @@
 platformName = "iOS"
 deviceName = "iPhone 5"
 platformVersion = "8.4"
-app = "./FinanceApp.app"
+app = "./zcjb-yy.app"
 waitForAppScript = "true"
 sendKeyStrategy = "grouped"
 
