@@ -1,8 +1,8 @@
 [caps]
-platformName = "ios"
+platformName = "iOS"
 deviceName = "=iPhone 6 (9.0) "
 platformVersion = "9.0"
-app = "/Users/yourusername/workspace/iOS_APP_Dest/Build/Products/Release-iphonesimulator/FinanceApp.app"
+app = "./zcjb-yy.app"
 sendKeyStrategy = "grouped"
 waitForAppScript = "true"
 
