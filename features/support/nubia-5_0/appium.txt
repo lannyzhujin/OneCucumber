@@ -4,7 +4,7 @@ deviceName = "NX505J"
 platformVersion = "5.0"
 nativeWebTap = "true"
 autoWebview = "true"
-app = "./zcjb-yy.app"
+app = "./zcjb-yy.apk"
 
 [appium_lib]
 sauce_username = false
