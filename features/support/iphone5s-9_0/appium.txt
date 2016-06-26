@@ -2,10 +2,5 @@
 platformName = "iOS"
 deviceName = "iPhone 5s"
 platformVersion = "9.0"
-app = "./zcjb-yy.app"
 waitForAppScript = "true"
 sendKeyStrategy = "grouped"
-
-[appium_lib]
-sauce_username = false
-sauce_access_key = false
