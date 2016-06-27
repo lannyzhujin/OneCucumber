@@ -14,6 +14,8 @@ require 'selenium-webdriver'
 MAX_SLEEP_SECS = 30
 MAXWAITSECONDS = 30
 ORACLE_ADDRESS = '//your.oracle.db.domain.name.com:1521/your-db-name'
+$server_url = "http://10.0.0.4:4723/wd/hub"
+$app = "/home/workspace/OneCucumber/zcjb-yy.app"
 
 # Create a custom World class so we don't pollute `Object` with Appium methods
 class AppiumWorld
@@ -22,6 +24,9 @@ end
 # Load the desired configuration from appium.txt, create a driver then
 # Add the methods to the world
 $caps = Appium.load_appium_txt file: File.expand_path("./../"+ENV['IDEVICENAME']+"/appium.txt", __FILE__), verbose: true
+$caps[:caps][:app] = $app
+$caps[:appium_lib] = {}
+$caps[:appium_lib][:server_url] = $server_url
 
 # Cucumber method World()
 World do
