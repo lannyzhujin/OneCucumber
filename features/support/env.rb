@@ -14,7 +14,21 @@ require 'selenium-webdriver'
 MAX_SLEEP_SECS = 30
 MAXWAITSECONDS = 30
 ORACLE_ADDRESS = '//your.oracle.db.domain.name.com:1521/your-db-name'
+
+######################################################################
+#### DOKER PARAMETERS                                              ####
+######################################################################
+##  For the $server_url parameter, if the running machine always 
+##  changes, you can just specify the url of the appium server and 
+##  then specify the host-ip mapping by docker run parameter:
+##  --add-host value
+##  where value can be like host:IP
+#---------------------------------------------------------------------
+$server_url = "http://appium.server.host:4723/wd/hub"
+## or just specify the ip in this file like below
 $server_url = "http://10.0.0.4:4723/wd/hub"
+######################################################################
+
 $app = "/home/workspace/OneCucumber/zcjb-yy.app"
 
 # Create a custom World class so we don't pollute `Object` with Appium methods
