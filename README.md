@@ -18,7 +18,7 @@ OneCucumber 是面向由PhoneGap开发APP的自动化测试框架。
 由于该框架支持一套cucumber用例同时覆盖android和iOS两种平台，故名“OneCucumber”。
 目前仅在MAC OSX下测试通过。
 
-主要特性：
+主要特性:
 
 1. 测试脚本Android和iOS双平台支持。
 2. 被测App界面元素对象库支持。
